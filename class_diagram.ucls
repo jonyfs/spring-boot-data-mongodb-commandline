@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="br.com.jonyfs.spring.boot.data.mongodb.commandline.model.Student" 
+    project="spring-boot-data-mongodb-commandline" 
+    file="/spring-boot-data-mongodb-commandline/src/main/java/br/com/jonyfs/spring/boot/data/mongodb/commandline/model/Student.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="266" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="2" language="java" name="br.com.jonyfs.spring.boot.data.mongodb.commandline.model.ScoreType" 
+    project="spring-boot-data-mongodb-commandline" 
+    file="/spring-boot-data-mongodb-commandline/src/main/java/br/com/jonyfs/spring/boot/data/mongodb/commandline/model/ScoreType.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="266" x="41" y="495"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="3" language="java" name="br.com.jonyfs.spring.boot.data.mongodb.commandline.model.Score" 
+    project="spring-boot-data-mongodb-commandline" 
+    file="/spring-boot-data-mongodb-commandline/src/main/java/br/com/jonyfs/spring/boot/data/mongodb/commandline/model/Score.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="266" x="41" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="4">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="5" name="scores"/>      
+      <multiplicity id="6" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="7">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="8" name="type"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
